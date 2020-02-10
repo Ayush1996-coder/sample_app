@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SampleApp</title>
+    <title><%= yield(:title) %>| Ruby on Rails Tutorial Sample
+App</title>
+    <% provide(:title,"Home") %>
+    <h1> Sample App Home </h1>
+    <p>This is the home page for <a href="http://www.railstutorial.org/"> RoR Tutorial</a> sample application </p>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
