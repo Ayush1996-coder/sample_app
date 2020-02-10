@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= yield(:title) %>| Ror Tutorial Sample
-App</title>
+
+    <title><%= full_title(yield(:title)) %> | ROR tutorial </title>
     <% provide(:title,"Home") %>
     <h1> Sample App Home </h1>
     <p>This is the home page for <a href="http://www.railstutorial.org/"> RoR Tutorial</a> sample application </p>
